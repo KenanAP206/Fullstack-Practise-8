@@ -1,0 +1,28 @@
+#about{
+
+    .about-cont{
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 100px;
+        img {
+            width: 100%;
+
+        }
+
+        .ac-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+            p {
+                color: #0000008f;
+            }
+        }
+    }
+}

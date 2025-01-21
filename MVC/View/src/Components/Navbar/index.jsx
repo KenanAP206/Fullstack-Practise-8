@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
+import { FaBars } from "react-icons/fa6";
 
 function Index() {
   const [scrolling, setScrolling] = useState(false);
@@ -31,7 +32,10 @@ function Index() {
             <FaFacebookF/>
             <FaTwitter/>
             <FaLinkedinIn/>
+            <FaBars className='res'/>
+
           </ul>
+   
         </div>
       </nav>
     </div>

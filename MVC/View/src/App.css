@@ -21,16 +21,20 @@ section{
 .hadmer{
   margin: 30px auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   h6{
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 13px;
-      color: #B2B2B2;
+    font-weight: 300;
+    font-size: 17px;
+    width: 65%;
+    margin: 0px auto;
+      color: #00000062;
   }
   h3{
-    font-weight: 500;
-    font-size: 35px;
-    color: #052C43;
+    font-weight: 600;
+    font-size: 40px;
+    color: #FD7E14;
   }
 }
