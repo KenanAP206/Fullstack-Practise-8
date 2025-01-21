@@ -2,12 +2,16 @@ import React, {useContext, useState} from 'react'
 import './Products.css'
 import { FaHeart } from "react-icons/fa";
 import { productContext } from '../../../Context/ProductContext';
+import {favoriteContext} from '../../../Context/FavoritesContext'
 import { NavLink } from 'react-router';
 import { IoIosSearch } from "react-icons/io";
 function index() {
+    
+  let {favorite,setFavorite}=useContext(favoriteContext)
     let {products,loading}=useContext(productContext)
     let [search,setSearch]=useState("")
     let [order,setOrder]=useState("asc")
+
     const filteredProducts= products ?  products
     .filter(product=>(
       product.name.toLowerCase().includes(search.toLowerCase())
@@ -20,6 +24,17 @@ function index() {
       }
     })
     : [];
+
+
+    function handleAddFavorite(product){
+      let findFavorite= favorite.find(item=>item._id === product._id)
+  
+      if(findFavorite){
+        alert('Already in your Wishlist')
+      }else{
+         setFavorite([...favorite,product])
+      }
+   }
 
   return (
     <div>
@@ -61,7 +76,7 @@ function index() {
                 <div className="pc-img">
                     <img src={product.image} alt="" />
                     <div className="pc-hover">
-                    <FaHeart />
+                    <FaHeart onClick={()=>handleAddFavorite(product)} />
                     <NavLink to={`/${product._id}`}> <IoIosSearch /></NavLink>
                     </div>
                     </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import { FaBars } from "react-icons/fa6";
-
+import { NavLink } from 'react-router';
 function Index() {
   const [scrolling, setScrolling] = useState(false);
 
@@ -27,8 +27,8 @@ function Index() {
           <ul className="navbar-menu">
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><NavLink to='/add'>Add</NavLink></li>
+            <li><NavLink to='/wishlist'>Wishlist</NavLink></li>
             <FaFacebookF/>
             <FaTwitter/>
             <FaLinkedinIn/>
