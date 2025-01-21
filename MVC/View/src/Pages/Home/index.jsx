@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import About from '../../Components/Main/About'
 import Services from '../../Components/Main/Services'
 import Pricing from '../../Components/Main/Pricing'
+import Products from '../../Components/Main/Products'
 function index() {
   return (
     <div>
@@ -15,6 +16,7 @@ function index() {
     <Hero/>
     <Feature/>
     <About/>
+    <Products/>
     <Services/>
     <Pricing/>
     </div>

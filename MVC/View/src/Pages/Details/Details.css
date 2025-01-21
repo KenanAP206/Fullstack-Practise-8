@@ -1,7 +1,8 @@
 #details{
     display: flex;
     justify-content: center;
-    margin: 100px auto;
+    margin: 200px auto;
+    z-index: 10;
     button{
 
         svg{
