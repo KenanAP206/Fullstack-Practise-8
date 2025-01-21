@@ -1,3 +1,17 @@
 footer{
-    
+    background-color: #343A40;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 30px;
+    svg{
+        color: #DC3545;
+
+
+    }
+
+    a{
+        color: white;
+        text-decoration: underline;
+    }
 }

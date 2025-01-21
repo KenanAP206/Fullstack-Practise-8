@@ -1,3 +1,20 @@
-nav{
-    
+.navbar{
+    padding: 10px 10%;
+    border-bottom: 1px solid white;
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        .navbar-logo{
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            color: white;
+        }
+    }
 }
