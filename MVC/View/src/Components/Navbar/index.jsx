@@ -1,19 +1,29 @@
-import React, { useState } from 'react';
-import './Navbar.css';
-import { FaFacebookF } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import React, { useState, useEffect } from 'react'
+import './Navbar.css'
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 
 function Index() {
+  const [scrolling, setScrolling] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) { // 50 piksel kaydırma sonrası
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div>
-      <nav className="navbar">
+      <nav className={`navbar ${scrolling ? 'navbar-scrolled' : ''}`}>
         <div className="navbar-container">
           <a href="/" className="navbar-logo">Banker</a>
-          <ul >
+          <ul className="navbar-menu">
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -25,7 +35,7 @@ function Index() {
         </div>
       </nav>
     </div>
-  );
+  )
 }
 
-export default Index;
+export default Index

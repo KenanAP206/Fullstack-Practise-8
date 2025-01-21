@@ -1,4 +1,5 @@
 .navbar{
+    transition: 0.8s;
     padding: 10px 10%;
     position: fixed;
     z-index: 100;
@@ -25,6 +26,21 @@
             }
 
           
+        }
+    }
+}
+
+.navbar-scrolled{
+    transition: 0.8s;
+    background-color: white;
+    .navbar-container{
+        .navbar-logo{
+            color: black;
+        }
+        ul{color: black;
+            a{
+                color: black;
+            }
         }
     }
 }
