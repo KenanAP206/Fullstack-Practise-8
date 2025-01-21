@@ -35,7 +35,7 @@
     .feat-low {
         margin: 50px auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 100px;
 
         img {
@@ -86,10 +86,25 @@
                     border: none;
                     font-size: 16px;
                     padding: 10px 30px;
-                    width: max-content;
+                    width: max-content !important;
                     cursor: pointer;
                 }
             }
         }
+    }
+}
+
+@media (max-width:500px) {
+    .fl-inp{
+
+
+        input{
+            width: 200px !important;
+        }
+        input[type="submit"]{
+            padding: 1px 5px !important;
+            width: min-content !important;
+        }
+
     }
 }
