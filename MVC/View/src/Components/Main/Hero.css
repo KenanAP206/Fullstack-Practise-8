@@ -1,0 +1,25 @@
+#hero{
+    background-image:linear-gradient(to right, #ba9e747f, #ba9e747f), url('https://preview.colorlib.com/theme/banker/images/hero_2.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .hero-cont{
+
+        color: white;
+
+        h2{
+            font-size: 60px;
+        }
+        p{
+            width: 70%;
+            margin: 0px auto;
+        }
+    }
+
+}
