@@ -7,7 +7,7 @@ function Index() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) { // 50 piksel kaydırma sonrası
+      if (window.scrollY > 10) { 
         setScrolling(true);
       } else {
         setScrolling(false);
