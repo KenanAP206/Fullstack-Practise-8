@@ -1,0 +1,95 @@
+#feature {
+    margin: 100px auto;
+
+    .feat-up {
+        margin: 0px auto;
+
+        .fu-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+
+            .fu-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+
+                h3 {
+                    font-weight: 500;
+                }
+
+                img {
+
+                    width: 20%;
+                }
+
+                p {
+                    color: #0000008f;
+                }
+            }
+        }
+    }
+
+    .feat-low {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 100px;
+
+        img {
+            width: 100%;
+
+        }
+
+        .fl-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+            p {
+                color: #0000008f;
+            }
+
+            ul {
+                color: #0000008f;
+                list-style: none;
+                li{
+                    display: flex;
+                    gap: 10px;
+                }
+              svg{
+                color: green;
+              }
+            }
+
+            .fl-inp{
+                display: flex;
+                gap: 15px;
+
+                input{
+                    border: 1px solid rgba(0, 0, 0, 0.212);
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    width: 250px;
+                    font-size: 16px;
+                }
+                input[type="submit"]{
+                    background-color: #FD7E14;
+                    color: white;
+                    border: none;
+                    font-size: 16px;
+                    padding: 10px 30px;
+                    width: max-content;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../../Components/Main/Hero'
-
+import Hero from '../../Components/Main/Hero/Hero'
+import Feature from '../../Components/Main/Feature'
 import { Helmet } from 'react-helmet'; 
 
 function index() {
@@ -11,7 +11,7 @@ function index() {
         <meta name="description" content="Welcome to our homepage." /> 
       </Helmet>
     <Hero/>
-
+    <Feature/>
     </div>
   )
 }
